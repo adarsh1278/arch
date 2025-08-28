@@ -8,7 +8,7 @@
 
 <Hero />
 <TxtHero />
-<SvgAnimation />
+<!-- <SvgAnimation /> -->
 
 <!-- Scroll Cards Section -->
 <ScrollCardsContainer />
