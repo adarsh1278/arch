@@ -117,7 +117,7 @@
 
  .section-2 img {
      margin-left: 3vmax;
-     background-color: #38f9d7;
+     /* background-color: #38f9d7; */
      width: 55%;
      object-fit: cover;
  }
@@ -218,6 +218,7 @@
          /* background-color: #38f9d7; */
          min-height: 100vh;
          /* gap: 10vmax; */
+         align-items: center !important;
          justify-content: space-evenly !important;
      }
 
@@ -234,9 +235,9 @@
 
      .section p {
          width: 80% !important;
-         font-size: 28px !important;
+         font-size: 35px !important;
          line-height: 32px !important;
-         text-align: center !important;
+         text-align: start !important;
      }
 
      .section h2 {
@@ -353,6 +354,7 @@
      gap: 2vmax;
      padding: 0%;
      margin-top: 5vmax;
+
  }
 
  .content-2-description {
@@ -535,13 +537,15 @@
      }
 
      .content-2-description {
+
+         /* background-color: aqua; */
          flex-direction: column;
          justify-content: start;
          align-items: start;
-         gap: 1vmax;
+         gap: 3vmax;
          width: 100%;
-         padding-top: 0;
-         margin-top: 0%;
+         padding-top: 20px !important;
+         /* margin-top: 0%; */
      }
 
      .header-1 {
@@ -720,21 +724,31 @@
      }
 
      .section p {
-         font-size: 16px !important;
-         line-height: 24px !important;
+         /* background-color: aqua; */
+         font-size: 24px !important;
+         font-style: normal !important;
+         font-weight: 200;
+         /* line-height: 48px; */
+         /* text-align: justify !important;
+         text-justify: inter-word !important; */
      }
 
      .section-4 div h4 {
-         font-size: 24px !important;
+         /* background-color: aqua; */
+         text-align: start;
+         width: 100% !important;
+         font-size: 30px !important;
          line-height: 32px !important;
      }
 
      .text-block span {
          font-size: 16px !important;
          line-height: 24px !important;
+         text-align: start !important;
      }
 
      .content-2 h3 {
+
          font-size: 6vmax !important;
      }
 

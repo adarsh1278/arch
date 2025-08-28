@@ -65,7 +65,7 @@
             </div>
             <div class="right">
                 <div class="logoholder">
-                    <img src="logo.svg" />
+                    <img src="/logo.svg" />
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="195"

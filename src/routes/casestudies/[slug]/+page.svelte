@@ -668,8 +668,8 @@
 
     .hero-bg {
         margin-top: 0%;
-        background-image: url("/bg.png");
-        background-color: aqua;
+        background-image: url("/bgAboutUs.png");
+        /* background-color: aqua; */
         background-size: cover;
         background-position: center;
         width: 100vw;
