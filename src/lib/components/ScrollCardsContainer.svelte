@@ -4,6 +4,7 @@
     import { gsap } from "gsap";
     import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
     import ScrollCard from "./ScrollCard.svelte";
+    import HiddenProcess from "./HiddenProcess.svelte";
 
     // Card data
     const cardData = [
@@ -88,6 +89,9 @@
         />
     {/each}
 </div>
+
+<!-- HIDDEN PROCESS SECTION - NO SCROLL EFFECTS -->
+<HiddenProcess />
 
 <!-- NORMAL CONTAINER - NO SCROLL EFFECTS -->
 <div class="normal-container">
