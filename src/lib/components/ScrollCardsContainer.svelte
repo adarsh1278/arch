@@ -11,21 +11,21 @@
             heading: "For those who makes it home",
             description:
                 "Your Stories, Your Dreams shaped into spaces that feels like home",
-            imageSrc: "/aboutus1.png",
+            imageSrc: "/home1.png",
             cardClass: "scroll-card-1",
         },
         {
-            heading: "Spaces that tell your story",
+            heading: "For those building something builder",
             description:
-                "Every corner whispers memories, every room holds dreams waiting to unfold",
-            imageSrc: "/aboutus2.png",
+                "Designed for performance and people, spaces where your team thrives and your vision becomes reality.",
+            imageSrc: "/home2.png",
             cardClass: "scroll-card-2",
         },
         {
             heading: "Where dreams find form",
             description:
-                "From vision to reality, crafting spaces that breathe life into imagination",
-            imageSrc: "/hrscroll1.png",
+                "Your Stories, Your Dreams shaped into  spaces that feels like homeDesigned to serve, support, and stand for something greater, schools, hospitals, and public spaces.",
+            imageSrc: "/home3.png",
             cardClass: "scroll-card-3",
         },
     ];

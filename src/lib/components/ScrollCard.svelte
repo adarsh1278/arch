@@ -93,7 +93,7 @@
 
     .heading {
         position: absolute;
-        width: 380px;
+        width: 400px;
         top: 71px;
         left: 64px;
         font-family: "Playfair Display", Helvetica, serif;
