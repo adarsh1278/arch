@@ -4,8 +4,10 @@
     import SvgAnimation from "$lib/components/SvgAnimation.svelte";
     import TxtHero from "$lib/components/TxtHero.svelte";
     import ScrollCardsContainer from "$lib/components/ScrollCardsContainer.svelte";
+    import IntroVideo from "$lib/components/IntroVideo.svelte";
 </script>
 
+<IntroVideo />
 <Hero />
 <TxtHero />
 <!-- <SvgAnimation /> -->
