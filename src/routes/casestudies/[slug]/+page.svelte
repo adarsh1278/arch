@@ -644,7 +644,8 @@
 
 <style>
     .case-study-wrapper {
-        background: var(--Secondary, #efe8db);
+        background-image: url("/bg.png");
+        background-repeat: repeat;
         width: 100%;
         min-height: 100vh;
         overflow-x: hidden;
@@ -657,7 +658,8 @@
         min-height: 100vh;
         align-items: center;
         justify-content: start;
-        background: var(--Secondary, #efe8db);
+        background-image: url("/bg.png");
+        background-repeat: repeat;
         padding-bottom: 10vmax;
         /* Remove these specific overrides that conflict with navbar */
         padding-left: 0;

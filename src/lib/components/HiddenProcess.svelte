@@ -158,7 +158,10 @@
         position: relative;
         width: 100%;
         min-height: 100vh;
-        background-color: #efe8db;
+        background-image: url('/bg.png');
+        background-repeat: repeat;
+        background-size: auto;
+        background-attachment: local;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -278,7 +281,7 @@
         flex-shrink: 0;
         border-radius: 12px;
         overflow: hidden;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1); */
         transition: transform 0.3s ease;
     }
 

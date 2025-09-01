@@ -472,12 +472,12 @@
         display: flex;
         flex-direction: column;
         justify-content: start;
-        align-items: start;        
+        align-items: start;
         align-content: start;
         width: 100%;
         gap: 2vmax;
         margin-top: 5vmax;
-            margin-bottom: 6vmax;
+        margin-bottom: 6vmax;
     }
 
     .content-4 h3 {

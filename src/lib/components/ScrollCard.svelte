@@ -40,7 +40,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #efe8db;
+        background-image: url("/bg.png");
+        background-repeat: repeat;
         margin: 0;
         padding: 0;
     }
@@ -49,7 +50,8 @@
         position: relative;
         width: 100%;
         height: 100%;
-        background: #efe8db;
+        background-image: url("/bg.png");
+        background-repeat: repeat;
         margin: 0 !important;
         padding: 0 !important;
         box-sizing: border-box;
@@ -266,7 +268,8 @@
     /* Small mobile styles */
     @media (max-width: 480px) {
         .section {
-            background-color: aqua;
+            background-image: url("/bg.png");
+            background-repeat: repeat;
             padding: 15px;
             overflow-x: hidden;
         }
