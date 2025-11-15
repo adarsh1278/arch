@@ -162,25 +162,28 @@
     <div class="container">
         <div class="hero-bg">
             <div>
-                <h1>Mouse and cheese design studio</h1>
-                <p>Commercial | Noida Uttar Pradesh</p>
+                <h1>Indirapuram penthouse</h1>
+                <p>Residential | Ghaziabad</p>
             </div>
         </div>
 
         <div class="sub-head">
-            <h2>A Spatial Terrain for Creative Momentum</h2>
+            <h2>Symphony of Light & Space</h2>
             <p>
-                The Mouse & Cheese studio challenged us in all the right ways. A
-                young, strategic creative collective whose identity is rooted in
-                movement, collaboration and play—they needed more than an
-                office. They needed a terrain.
+                The aim wasn’t to create something new, but to make the existing
+                space truly work. The family owned two stacked floors in an old
+                building that felt dark, closed, and disconnected. They didn’t
+                need more room. They needed clarity, connection, and comfort.
+                The vision became simple: remove the fragmentation and shape a
+                space that felt unified, brighter, and genuinely livable within
+                the structure’s limits.
             </p>
         </div>
 
         <div class="section-2">
-            <img src="/section2.png" alt="Section 2 Image" />
-            <img src="/section2.png" alt="Section 2 Image" />
-            <img src="/section2.png" alt="Section 2 Image" />
+            <img src="/Rectangle 159.png" alt="Section 2 Image" />
+            <img src="/Rectangle 160.png" alt="Section 2 Image" />
+            <img src="/Rectangle 161.png" alt="Section 2 Image" />
         </div>
 
         <div class="sub-head-2">
@@ -192,25 +195,46 @@
 
         <div class="horizontal-scroll">
             <div class="scroll-item-1">
-                <img src="/hrscroll1.png" alt="Image 1" class="scroll-image" />
+                <img
+                    src="/hand sketch 1.png"
+                    alt="Image 1"
+                    class="scroll-image"
+                />
                 <p>
-                    Inspired by their looped logo, we recognized early on that
-                    the space couldn't be linear. It needed to support smooth
-                    circulation without interruption, foster collaboration
-                    without chaos, and offer openness without sacrificing
-                    privacy.
+                    The first big step was connecting the two floors to create a
+                    duplex. This instantly improved how the space functioned. It
+                    allowed clear separation between family areas and private
+                    rooms, and the staircase became a natural anchor that guided
+                    movement and brought in light.
                 </p>
             </div>
 
             <div class="scroll-item-1">
-                <img src="/hrscroll2.png" alt="Image 2" class="scroll-image" />
+                <img
+                    src="/8091bdfa-c3d8-49d8-b6f3-0a039c49705d 1.png"
+                    alt="Image 2"
+                    class="scroll-image"
+                />
                 <p>
-                    Before exploring form, we first delved into understanding
-                    both function and personality. This duality was central to
-                    our process and guided every decision we made.
+                    We kept the needs of a multi-generation family at the
+                    center. The idea was to create a space where privacy and
+                    togetherness both felt natural.
                 </p>
             </div>
-
+            <div class="scroll-item-1">
+                <img
+                    src="/f54ce718-c901-458b-80d4-1be627d98778 1.png"
+                    alt="Image 2"
+                    class="scroll-image"
+                />
+                <p>
+                    Since the layout was long and narrow, we made every part
+                    work harder. We pulled natural light deeper into the space,
+                    avoided dead corners, and designed elements to serve more
+                    than one purpose. Storage also added warmth, walls supported
+                    light flow, and transitions became places to breathe.
+                </p>
+            </div>
             <div class="scroll-item-2">
                 <video class="scroll-video" autoplay muted loop playsinline>
                     <source src="/hrscrollv1.mp4" type="video/mp4" />
@@ -221,63 +245,63 @@
             <div class="scroll-item-3">
                 <div class="scroll-item-4">
                     <img
-                        src="/Rectangle 157.png"
+                        src="/FRONT BEDROOM-01 1.png"
                         alt="Image 3"
-                        class="scroll-image"
+                        class="scroll-image-3"
                     />
                 </div>
-                <h3>Noise Management</h3>
+
                 <p>
-                    Layered felt panels, fabric-lined storage, and edge
-                    treatments were applied to reduce echo and cross-talk. This
-                    isn't soundproofing. It's sound shaping—preserving energy
-                    while ensuring clarity.
+                    The rooms were designed to adapt as the family grows and
+                    changes. Spaces can shift from one purpose to another — from
+                    kids to teenagers to elders. The design is flexible enough
+                    to evolve with their lives, not hold them back.
                 </p>
             </div>
 
             <div class="scroll-item-5">
-                <img src="/Rectangle 158.png" alt="Image 1" />
+                <img src="/FRONT BEDROOM -02 1 (1).png" alt="Image 1" />
             </div>
         </div>
 
         <div class="sub-head">
-            <h2>Zoning for Creative Workstyles</h2>
+            <h2>Making Everyday Living Feel Better</h2>
             <p>
-                Rather than segmenting the space with walls, we embedded
-                functional and emotional zoning into the architecture.
+                We reimagined the space as something you don’t just see, but
+                feel.
             </p>
         </div>
 
         <div class="hero-2">
             <div class="hero-bg-2">
-                <div class="animated-text">
-                    <p class="text-1">Micro-collaboration zone</p>
-                    <p class="text-2">Hierarchy Without Exclusion</p>
-                    <p class="text-3">Prototyping Zone</p>
-                </div>
+                <!-- <div class="animated-text">
+                    <p class="text-1">Living Room</p>
+                    <p class="text-2">Master Bedroom</p>
+                    <p class="text-3">BathStudio</p>
+                </div> -->
             </div>
         </div>
 
         <div class="section-3">
             <video class="section-3-video" autoplay muted loop playsinline>
-                <source src="/in making m&c.mp4" type="video/mp4" />
+                <source src="/Untitled design.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
+
             <div class="section-3-card">
-                <h2>In Retrospect</h2>
+                <h2>Heritage in the Structuret</h2>
                 <p>
-                    The curved glass wall was our biggest challenge — too
-                    essential to drop, too complex to execute easily. The
-                    biggest challenge lay in the curved glass walls—an idea
-                    central to the spatial language, yet constantly questioned
-                    for cost, execution, and practicality. It sat right in the
-                    in-between: too ambitious to be easy, too essential to let
-                    go. We navigated it with a series of jugaads—adjusting
-                    alignments, working with local fabricators, testing
-                    mock-ups—not to dilute the idea, but to protect its essence.
-                    The final outcome isn't a perfect curve, but a resolved one.
-                    It holds the brand's openness and softness exactly where it
-                    matters most.
+                    The building had almost 40 years behind it — uneven slabs,
+                    worn-out walls, and quirks that only time can carve. Instead
+                    of fighting its age, we worked with it. We kept what held
+                    strong, strengthened what had given up, and let go of what
+                    no longer made sense. The goal wasn’t to force it into
+                    looking new, but to help it stand true , steady, usable, and
+                    quietly confident in its own lived-in history. The entire
+                    project was delivered within a ₹40L budget, without
+                    shortcuts. This was achieved by using high-performing
+                    natural materials, lean planning, and smart structure , not
+                    by stripping down experience.
                 </p>
             </div>
         </div>
@@ -670,7 +694,7 @@
 
     .hero-bg {
         margin-top: 0%;
-        background-image: url("/bgAboutUs.png");
+        background-image: url("/Enscape_2024-12-03-18-23-26 1.png");
         /* background-color: aqua; */
         background-size: cover;
         background-position: center;
@@ -751,7 +775,7 @@
         font-style: normal;
         font-weight: 400;
         line-height: 30px;
-        width: 38%;
+        width: 58%;
         letter-spacing: -0.38px;
     }
 
@@ -937,7 +961,15 @@
     .scroll-image {
         height: 536px;
         width: auto;
-        max-width: 800px;
+        min-width: 800px;
+        object-fit: cover;
+
+        border-radius: 12px;
+    }
+    .scroll-image-3 {
+        height: 536px;
+        width: 500px;
+        min-width: 400px;
         object-fit: cover;
         border-radius: 12px;
     }
@@ -1123,7 +1155,7 @@
         margin-top: 2vmax;
         position: relative;
         overflow: hidden;
-        animation: changeBackground 9s infinite;
+        animation: changeBackground 15s infinite;
     }
 
     .hero-2 {
@@ -1132,18 +1164,27 @@
 
     @keyframes changeBackground {
         0%,
-        33.33% {
-            background-image: url("/bg2.png");
+        20% {
+            background-image: url("/1 29.png");
         }
 
-        33.34%,
-        66.66% {
-            background-image: url("/bg5.png");
+        20.1%,
+        40% {
+            background-image: url("/BACK SIDE (MASTER BEDROOM)-02 1.png");
         }
 
-        66.67%,
+        40.1%,
+        60% {
+            background-image: url("/BACK BATHROOM  1.png");
+        }
+        60.1%,
+        80% {
+            background-image: url("/BACK SIDE (MASTER BEDROOM) 1.png");
+        }
+
+        80.1%,
         100% {
-            background-image: url("/bg6.png");
+            background-image: url("/PARENT BEDROOM_01 1.png");
         }
     }
 
@@ -1174,24 +1215,24 @@
     }
 
     .hero-bg-2 .text-1 {
-        animation: showText1 9s infinite;
+        animation: showText1 10s infinite;
     }
 
     .hero-bg-2 .text-2 {
-        animation: showText2 9s infinite;
+        animation: showText2 10s infinite;
     }
 
     .hero-bg-2 .text-3 {
-        animation: showText3 9s infinite;
+        animation: showText3 10s infinite;
     }
 
     @keyframes showText1 {
         0%,
-        30% {
+        20% {
             opacity: 1;
         }
 
-        33.33%,
+        20%,
         100% {
             opacity: 0;
         }
@@ -1199,38 +1240,33 @@
 
     @keyframes showText2 {
         0%,
-        33.33% {
+        20% {
             opacity: 0;
             color: white;
         }
 
-        36.66%,
-        63.33% {
+        20%,
+        60% {
             opacity: 1;
             color: white;
         }
 
-        66.66%,
-        100% {
+        60%,
+        80% {
             opacity: 0;
         }
     }
 
     @keyframes showText3 {
         0%,
-        66.66% {
+        60% {
             opacity: 0;
             color: white;
         }
 
-        69.99%,
-        97% {
-            opacity: 1;
-            color: white;
-        }
-
+        60%,
         100% {
-            opacity: 0;
+            opacity: 1;
             color: white;
         }
     }

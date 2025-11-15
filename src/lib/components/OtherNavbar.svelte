@@ -59,7 +59,9 @@
                 <div class="dropdown-item">
                     <a href="#" class="dropdown-link">Residential ▸</a>
                     <div class="sub-dropdown">
-                        <a href="#" class="sub-link">Lawrence Villa</a>
+                        <a href="/casestudies/Lawrence" class="sub-link"
+                            >Lawrence Villa</a
+                        >
                         <a href="#" class="sub-link">Roop Nagar Villa</a>
                         <a href="#" class="sub-link">Indrapuram</a>
                     </div>
@@ -67,9 +69,8 @@
                 <div class="dropdown-item">
                     <a href="#" class="dropdown-link">Commercial ▸</a>
                     <div class="sub-dropdown">
-                        <a
-                            href="/casestudies/mouse-and-cheese-design-studio"
-                            class="sub-link">Mouse & Cheese Design Studio</a
+                        <a href="/casestudies/mouseAndcheese" class="sub-link"
+                            >Mouse & Cheese Design Studio</a
                         >
                         <a href="#" class="sub-link">SixD</a>
                         <a href="#" class="sub-link">A-82 First Floor</a>

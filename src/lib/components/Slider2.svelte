@@ -66,17 +66,21 @@
                     <span>Residential | Noida, Uttar Pradesh</span>
                     <img src="p1.png" width="100%" />
                 </div>
-                <div class="swiper-slide">
-                    <h2 id="nmsmjk">Mouse and cheese design studio</h2>
-                    <span>Commercial | Noida, Uttar Pradesh</span>
 
-                    <img src="2.png" width="100%" />
-                </div>
                 <div class="swiper-slide">
-                    <h2>Laurence Duplex</h2>
-                    <img src="3.png" width="100%" />
-                    <span>Residential | Noida, Uttar Pradesh</span>
+                    <a href="/casestudies/mouseAndcheese">
+                        <h2 id="nmsmjk">Mouse and cheese design studio</h2>
+                        <span>Commercial | Noida, Uttar Pradesh</span>
+
+                        <img src="2.png" width="100%" />
+                    </a>
                 </div>
+
+                <a class="swiper-slide" href="/casestudies/Lawrence">
+                    <h2>Laurence Duplex</h2>
+                    <img src="/case2.png" width="100%" />
+                    <span>Residential | Noida, Uttar Pradesh</span>
+                </a>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -87,7 +91,7 @@
 
 <style>
     section {
-        width: 100dvw;
+        width: 100%;
         height: 100dvh;
         display: flex;
         justify-content: center;
@@ -278,7 +282,7 @@
             left: 15px !important;
         }
 
-        #nmsmjk{
+        #nmsmjk {
             font-size: 1.6rem !important;
         }
     }
