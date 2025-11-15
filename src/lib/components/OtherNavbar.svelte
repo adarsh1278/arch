@@ -62,6 +62,7 @@
         </div>
 
         <a href="#" class="nav-link">In-between</a>
+        <a href="/blog" class="nav-link">Blogs</a>
         <a href="/contact" class="nav-link">Contact us</a>
     </div>
     <!-- Right Empty (Desktop) -->
@@ -131,7 +132,7 @@
                     </div>
                 </div>
             </div>
-            <a href="/blog" class="drawer-link">Blogs</a>
+
             <a href="#" class="drawer-link">In-between</a>
             <a href="/contact" class="drawer-link">Contact us</a>
         </div>

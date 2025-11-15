@@ -1,11 +1,11 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
-	import Footer from '$lib/components/footer.svelte';
-	import Navbar from '$lib/components/Navbar.svelte';
-	import OtherNavbar from '$lib/components/OtherNavbar.svelte'; // agar dusre pages ke liye dusri navbar chahiye
-	import '../app.css';
+	import favicon from "$lib/assets/favicon.svg";
+	import Footer from "$lib/components/footer.svelte";
+	import Navbar from "$lib/components/Navbar.svelte";
+	import OtherNavbar from "$lib/components/OtherNavbar.svelte"; // agar dusre pages ke liye dusri navbar chahiye
+	import "../app.css";
 
-	import { page } from '$app/stores';
+	import { page } from "$app/stores";
 </script>
 
 <svelte:head>
@@ -14,7 +14,7 @@
 
 <div class="main">
 	<!-- ✅ Conditional Navbar -->
-	{#if $page.url.pathname === '/'}
+	{#if $page.url.pathname === "/"}
 		<Navbar />
 	{:else}
 		<OtherNavbar />
