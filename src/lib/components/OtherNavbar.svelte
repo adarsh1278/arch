@@ -1,9 +1,26 @@
 <script>
     import { onMount } from "svelte";
 
-    let menuToggle; // bind to #menu-toggle
+    let menuToggle;
+    let lastScroll = 0;
+    let navVisible = true;
 
     onMount(() => {
+        window.addEventListener("scroll", () => {
+            const current = window.scrollY;
+
+            // Scroll down → hide navbar
+            if (current > lastScroll && current > 80) {
+                navVisible = false;
+            }
+            // Scroll up → show navbar
+            else {
+                navVisible = true;
+            }
+
+            lastScroll = current;
+        });
+
         const drawerLinks = document.querySelectorAll(".drawer a");
 
         drawerLinks.forEach((link) => {
@@ -31,7 +48,7 @@
     </div>
 
     <!-- Center (Menu) -->
-    <div class="nav-center desktop-menu">
+    <div class="nav-center desktop-menu navbar {navVisible ? 'show' : 'hide'}">
         <a href="/" class="nav-link">Home</a>
         <a href="/about" class="nav-link">About</a>
 
@@ -62,7 +79,6 @@
         </div>
 
         <a href="/in-between" class="nav-link">In-between</a>
-        <!-- <a href="/blog" class="nav-link">Blogs</a> -->
         <a href="/contact" class="nav-link">Contact us</a>
     </div>
     <!-- Right Empty (Desktop) -->
@@ -143,6 +159,35 @@
     /* Dropdown container */
     .dropdown {
         position: relative;
+    }
+
+    .navbar {
+        transition:
+            transform 0.35s ease,
+            opacity 0.35s ease;
+    }
+
+    /* Hide when scrolling down */
+    .navbar.hide {
+        transform: translateY(-100%);
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    /* Show when scrolling up */
+    .navbar.show {
+        backdrop-filter: blur(3px);
+        background-color: rgba(255, 255, 255, 0.01);
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Always show when hovered (desktop behaviour) */
+    .navbar.hide:hover {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
     }
 
     /* Dropdown menu */

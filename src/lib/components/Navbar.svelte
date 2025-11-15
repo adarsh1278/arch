@@ -78,7 +78,7 @@
             {/if}
         </div>
         <a href="/blog" class="nav-link">Blogs</a>
-        <a href="#" class="nav-link">In-between</a>
+        <a href="/in-between" class="nav-link">In-between</a>
         <a href="/contact" class="nav-link">Contact us</a>
 
         <li><a href="/about">About Us</a></li>
