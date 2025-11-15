@@ -10,7 +10,7 @@ body {
   height: 100%;
   font-family: 'Inter', sans-serif;
   /* background-color: var(--background); */
-  background-image: url('bg.png');
+  background-image: url('/bg.png');
   background-repeat: repeat;
   color: var(--text);
   background-color: var(--background);
@@ -37,12 +37,12 @@ body {
 
 }
 
-.bg-primary{
+.bg-primary {
   background-color: #8B3A3A !important;
   color: white !important;
 }
 
-.curve{
+.curve {
   border-radius: 10px;
 }
 
@@ -120,4 +120,3 @@ select {
   justify-content: center;
   position: static;
 }
-

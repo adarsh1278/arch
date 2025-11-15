@@ -1,323 +1,198 @@
-<!--
-SvelteKit static page: Case Study / Article layout (pure CSS, responsive)
-Usage:
- 1. Create file: src/routes/case-study/+page.svelte
- 2. Copy images into: static/images/
-    - hero: /images/case-study-hero.png
-    - materials-grid: /images/materials-grid.png  (optional)
-    - wood-samples: /images/wood-samples.png
-    - steel-tubes: /images/steel-tubes.png
- 3. This is a static page, no fetch or JS required.
--->
-
 <script>
-  // pure static page — no client-side JS needed for functionality
-  export let title =
-    "The Science Behind Timeless Materials: Why Concrete, Steel, and Wood Still Reign in Modern Architecture";
-  export let readTime = "5 min read";
+  // Blog data structure
+  const blogData = {
+    title:
+      "The Science Behind Timeless Materials: Why Concrete, Steel, and Wood Still Reign in Modern Architecture",
+    readTime: "5 min read",
+    heroSubtitle: "The Eternal Grammar of Space-Making",
+
+    lead: {
+      paragraphs: [
+        "In the relentless pursuit of architectural novelty, we witness an endless parade of new building materials—each promising to revolutionize how we shape space. Yet, like the monsoon that returns each year to renew the earth, three ancient materials continue to define our modern architecture: concrete, steel, and wood. They are the fundamental vocabulary with which we compose the symphony of human habitation.",
+        "This persistence speaks to something deeper than mere convention. It reveals the profound material science that connects the molecular realm to human experience, bridging the gap between what engineers calculate and what inhabitants feel. In India's rapidly transforming landscape, these materials remain the constant threads weaving through our architectural narrative.",
+        "Their story is not merely one of construction technology, but of materials that have learned to respond to the deepest needs of human settlement—from the monsoon-soaked courtyards of Kerala to the sun-baked terraces of Rajasthan.",
+      ],
+      image: {
+        src: "/image 83.png",
+        alt: "Grid of material samples: concrete, wood, steel, brick",
+      },
+    },
+
+    sections: [
+      {
+        heading: "Concrete: The Alchemy of Modern India",
+        subheading: "The Poetry of Chemical Transformation",
+        content: [
+          "Consider concrete—this miraculous substance that begins as powder and water, yet through an ancient alchemy becomes stone. The concrete hydration process is nothing short of poetic: calcium silicate crystals growing like coral in an invisible sea, binding sand and stone into a matrix stronger than the materials from which it came.",
+          "In India, concrete construction has become our contemporary vernacular. Walk through Chandigarh—that great experiment in modern urban planning—and observe how concrete captures light and shadow, creating the play of chiaroscuro that defines architectural experience. Le Corbusier understood this: concrete is not merely a construction material, but a medium for sculpting space and time.",
+          "Reinforced concrete construction represents a marriage of materials—the stone-like compression strength of concrete embracing steel's tensile grace. This union enables the great spans of our commercial complexes, the soaring shells of our auditoriums, the protective embrace of our residential buildings. It is architecture's most successful partnership. The concrete construction cost remains democratically accessible, enabling not just monuments for the privileged, but dignified shelter for the many. In this lies concrete's greatest achievement: it has made good architecture available to the masses, transforming slums into neighborhoods, hovels into homes.",
+        ],
+        subsection: {
+          heading: "The Climate-Responsive Wisdom",
+          content: [
+            "Modern concrete technology has learned to dance with India's extreme climate. Like the thick walls of our traditional architecture, concrete's thermal mass moderates temperature swings, creating comfortable microclimates within our buildings.",
+            "The concrete durability we witness in structures like the Gando School—still standing strong after decades of monsoons—demonstrates this material's deep understanding of our environmental context. High-performance concrete now incorporates fly ash and local pozzolans, creating not just stronger structures, but more sensitive ones—materials that acknowledge the industrial waste streams of our power plants and transform them into the bones of our future cities. This is sustainable concrete in its truest sense: architecture that heals even as it shelters.",
+            "Green building materials evolution shows concrete learning new tricks: pervious concrete that breathes with the earth, allowing rainwater to percolate rather than run off. Self-compacting concrete that places itself with the grace of honey, eliminating the violent vibration that once marked concrete construction. These innovations reveal a material growing more sophisticated, more humane.",
+          ],
+        },
+      },
+      {
+        heading: "Steel: The Tensile Dreams of Modernity",
+        subheading: "The Structural Poetry of Progress",
+        content: [
+          "Steel construction enabled architecture's great liberation from the tyranny of the wall. No longer did load-bearing masonry dictate the rhythm of openings—steel's extraordinary strength-to-weight ratio freed façades to become pure expression.",
+          "In India's high-rise buildings, steel performs its greatest magic: it allows us to build vertically without losing our connection to the horizontal. The steel frame construction of Mumbai's towers maintains the architectural rhythm of our traditional courtyard houses—just stacked into the sky. Each floor becomes a horizontal village, connected by vertical streets of circulation. TMT steel bars represent evolution in action—the hard skin protecting a ductile core, much like bamboo's response to wind. This seismic design wisdom emerges from our own geological reality: in earthquake zones, buildings must bend, not break. Steel teaches concrete this dance of flexibility.",
+          "Prefabricated steel structures speak to our contemporary condition of rapid change. Like the traveling carpenters who once moved across the subcontinent building temples and palaces, steel components can be fabricated in one place and assembled anywhere. This modular construction approach democratizes quality—the precision of factory manufacturing serving the urgency of field construction.",
+        ],
+        image: {
+          src: "/image 84.png",
+          alt: "Grid of material samples: concrete, wood, steel, brick",
+        },
+        additionalContent: [
+          "The Lightness of Being",
+          "Structural steel enables architecture to touch the earth gently. While concrete foundations anchor us to the geological present, steel superstructures float above, creating large-span buildings that seem to defy gravity. The great industrial buildings of our manufacturing corridors demonstrate this poetry of lightness—vast spaces uninterrupted by columns, where human activity flows like wind across the plains. Steel building construction has learned to collaborate with India's tropical sun. Cold-formed steel systems create ventilated cavities that promote air movement, while lightweight steel framing reduces the thermal mass that would otherwise store unwanted heat. This is climate-responsive construction technology at its most intelligent. The steel recycling narrative speaks to architecture's responsibility to future generations. Unlike concrete, which returns to aggregate, steel maintains its molecular integrity through infinite cycles of reuse. Each demolished structure becomes the raw material for tomorrow's dreams—truly sustainable construction in its most literal sense.",
+        ],
+      },
+      {
+        heading: "Wood: The Living Memory of Architecture",
+        subheading: "The Cellular Wisdom of Growth",
+        content: [
+          "Wood construction connects us to architecture's deepest roots. Unlike the manufactured uniformity of concrete and steel, timber construction carries the memory of seasons, the record of rainfall, the signature of soil and sunlight. Each grain line tells the story of a year's growth—architecture that literally embodies time.",
+          "Cross-laminated timber (CLT) represents wood's conversation with contemporary engineering. By laminating timber layers perpendicular to each other, we recreate at the human scale what nature accomplishes at the cellular level—the orthogonal strength that allows trees to sway without snapping. Mass timber construction thus becomes biomimicry of the highest order.",
+          "In India's sustainable construction movement, wood offers something concrete and steel cannot: the ability to store carbon rather than emit it. Timber buildings become carbon banks, locking atmospheric CO2 into cellulose vaults. This is architecture as environmental healing—buildings that give back more than they take.",
+          "Engineered wood products extend timber's possibilities while honoring its essential nature. Glue-laminated timber creates structural members that span like steel while breathing like wood. Bamboo construction using engineered bamboo products brings this ancient grass into the realm of modern building design—fast-growing, strong, and perfectly adapted to monsoon conditions.",
+          "The Sensory Architecture of Wood",
+          "Wood's thermal properties create microclimates of comfort. Unlike the thermal shock of touching concrete or steel on a hot day, wood remains at human temperature—a material that welcomes contact. In residential construction, this tactile quality transforms houses into homes, spaces into places. The acoustic properties of wood create architecture that sounds as good as it looks. Concert halls choose wood not for fashion but for physics—timber's cellular structure absorbs harsh frequencies while reflecting musical ones. Wooden flooring in our homes performs similar magic, softening the sharp sounds of daily life. FSC-certified wood connects contemporary construction to responsible forest stewardship. This certification ensures our construction timber comes from forests managed for perpetuity rather than exploitation—architecture that takes only what can be renewed.",
+        ],
+        image: {
+          src: "/image 85.png",
+          alt: "planks of finished wood showing grain and finish",
+          caption: "Timber samples — tactile, warm, and resonant",
+        },
+      },
+      {
+        heading: "The Triangular Dance: Integration as Wisdom",
+        subheading: null,
+        content: [
+          "The Composite Philosophy The greatest modern architecture emerges not from the dominance of any single material, but from their intelligent collaboration. Hybrid construction systems demonstrate this synthesis: concrete foundations that anchor structures to the earth, steel frames that enable spatial freedom, and wood components that humanize the experience.",
+          "Building information modeling (BIM) now enables architects to choreograph this material dance with unprecedented precision. We can optimize the performance of each material within the larger structural symphony, creating energy-efficient buildings that perform better than the sum of their parts.",
+          "Construction quality control becomes the conductor's baton in this orchestration. Each material must be deployed at the right moment, in the right proportion, for the right purpose. The building codes that govern our practice recognize this complexity, establishing the rules within which material creativity can flourish.",
+          "The Cultural Substrate",
+          "In India's construction industry, these three materials have become part of our cultural DNA. The skilled workforce that shapes our built environment carries generations of knowledge about concrete mixing, steel welding, and wood joining. This is not mere technical expertise, but cultural continuity—the hands that build our future connected to the wisdom that built our past.",
+          "Construction costs reflect not just material prices, but the efficiency that comes from deep familiarity. Ready-mix concrete trucks navigate our narrow streets with practiced ease. Steel fabrication shops dot our industrial landscapes, each a repository of metalworking knowledge. Timber merchants understand the seasonal rhythms of wood supply, connecting forest cycles to construction schedules.",
+          "The material supply chains that serve our construction projects create economic ecosystems spanning from quarry to construction site, from steel mill to fabrication shop, from forest to sawmill. These networks represent social infrastructure as important as the physical infrastructure they help create.",
+          "The Environmental Imperative",
+          "Sustainable building materials evolution pushes all three materials toward greater environmental sensitivity. Carbon-neutral concrete using alternative cementitious materials. Green steel production powered by renewable energy. Sustainable forestry that treats forests as perpetual resources rather than mining sites.",
+          "Net-zero construction becomes achievable when these materials collaborate intelligently. Concrete thermal mass storing solar heat for night-time release. Steel structures enabling natural ventilation systems. Wood components providing insulation and carbon storage. The green building certification systems that evaluate our work recognize this integrated approach to environmental performance.",
+          "Construction waste management closes the loop, ensuring that today's buildings become tomorrow's raw materials. Deconstruction rather than demolition preserves material value, while recycled concrete aggregate and reclaimed timber bring the patina of time into new constructions.",
+        ],
+      },
+      {
+        heading: "The Continuing Story",
+        subheading: null,
+        content: [
+          "The science of building materials reveals why concrete, steel, and wood remain central to our architectural practice. They succeed because they address the fundamental human needs that architecture must serve: shelter from the elements, space for activity, beauty for the soul.",
+          "Their persistence through waves of innovation demonstrates something profound about the relationship between material properties and human habitation. These are not merely construction materials, but the physical vocabulary through which we express our deepest aspirations for dwelling on this earth.",
+          "As India continues its great urban transformation, these materials will continue to evolve, to learn, to adapt. They will remain the constants in our architectural equation—the reliable partners in our ongoing dialogue between human need and environmental possibility.",
+          "Future architecture will speak this same language, enriched by new understanding but rooted in timeless wisdom. In the end, we build not with materials alone, but with the accumulated knowledge of how materials can serve life. This is the true science behind timeless materials: their capacity to remain forever young in service of human flourishing.",
+        ],
+      },
+    ],
+  };
 </script>
 
 <svelte:head>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>{title}</title>
+  <title>{blogData.title}</title>
 </svelte:head>
+
 <div>
   <main class="container">
     <header class="hero">
-      <div class="hero-meta">{readTime}</div>
-      <h1 class="hero-title">{title}</h1>
-      <p class="hero-sub">The Eternal Grammar of Space-Making</p>
+      <div class="hero-meta">{blogData.readTime}</div>
+      <h1 class="hero-title">{blogData.title}</h1>
+      <p class="hero-sub">{blogData.heroSubtitle}</p>
     </header>
 
     <article class="content">
       <section class="lead">
         <p>
-          In the relentless pursuit of architectural novelty, we witness an
-          endless parade of new building materials—each promising to
-          revolutionize how we shape space. Yet, like the monsoon that returns
-          each year to renew the earth, three ancient materials continue to
-          define our modern architecture: concrete, steel, and wood. They are
-          the fundamental vocabulary with which we compose the symphony of human
-          habitation.
-          <br /> <br />
-          This persistence speaks to something deeper than mere convention. It reveals
-          the profound material science that connects the molecular realm to human
-          experience, bridging the gap between what engineers calculate and what
-          inhabitants feel. In India's rapidly transforming landscape, these materials
-          remain the constant threads weaving through our architectural narrative.
-          <br /> <br />
-          Their story is not merely one of construction technology, but of materials
-          that have learned to respond to the deepest needs of human settlement—from
-          the monsoon-soaked courtyards of Kerala to the sun-baked terraces of Rajasthan.
+          {#each blogData.lead.paragraphs as paragraph, i}
+            {paragraph}
+            {#if i < blogData.lead.paragraphs.length - 1}
+              <br /> <br />
+            {/if}
+          {/each}
         </p>
         <figure class="lead-figure" aria-hidden="true">
-          <img
-            src="/image 83.png"
-            alt="Grid of material samples: concrete, wood, steel, brick"
-          />
+          <img src={blogData.lead.image.src} alt={blogData.lead.image.alt} />
         </figure>
       </section>
 
-      <h2 class="nsjkds">Concrete: The Alchemy of Modern India</h2>
-      <p class="drop">
-        <strong>The Poetry of Chemical Transformation</strong>
-      </p>
-      <p class="drop">
-        <strong>The Poetry of Chemical Transformation</strong>
-      </p>
-      <p>
-        Consider concrete—this miraculous substance that begins as powder and
-        water, yet through an ancient alchemy becomes stone. The concrete
-        hydration process is nothing short of poetic: calcium silicate crystals
-        growing like coral in an invisible sea, binding sand and stone into a
-        matrix stronger than the materials from which it came.
-        <br /> <br />
-        In India, concrete construction has become our contemporary vernacular. Walk
-        through Chandigarh—that great experiment in modern urban planning—and observe
-        how concrete captures light and shadow, creating the play of chiaroscuro
-        that defines architectural experience. Le Corbusier understood this: concrete
-        is not merely a construction material, but a medium for sculpting space and
-        time.
+      {#each blogData.sections as section}
+        <h2
+          class={section.heading.includes("Concrete") ||
+          section.heading.includes("Continuing")
+            ? "nsjkds"
+            : ""}
+        >
+          {section.heading}
+        </h2>
 
-        <br /> <br />
-        Reinforced concrete construction represents a marriage of materials—the stone-like
-        compression strength of concrete embracing steel's tensile grace. This union
-        enables the great spans of our commercial complexes, the soaring shells of
-        our auditoriums, the protective embrace of our residential buildings. It
-        is architecture's most successful partnership. The concrete construction
-        cost remains democratically accessible, enabling not just monuments for the
-        privileged, but dignified shelter for the many. In this lies concrete's greatest
-        achievement: it has made good architecture available to the masses, transforming
-        slums into neighborhoods, hovels into homes.
-      </p>
-
-      <div class="two-col">
-        <div>
-          <h3>The Climate-Responsive Wisdom</h3>
-          <p>
-            Modern concrete technology has learned to dance with India’s extreme
-            climate. Like the thick walls of our traditional architecture,
-            concrete’s thermal mass moderates temperature swings, creating
-            comfortable microclimates within our buildings.
-            <br /> <br />
-
-            The concrete durability we witness in structures like the Gando
-            School—still standing strong after decades of monsoons—demonstrates
-            this material's deep understanding of our environmental context.
-            High-performance concrete now incorporates fly ash and local
-            pozzolans, creating not just stronger structures, but more sensitive
-            ones—materials that acknowledge the industrial waste streams of our
-            power plants and transform them into the bones of our future cities.
-            This is sustainable concrete in its truest sense: architecture that
-            heals even as it shelters.
-            <br /> <br />
-
-            Green building materials evolution shows concrete learning new
-            tricks: pervious concrete that breathes with the earth, allowing
-            rainwater to percolate rather than run off. Self-compacting concrete
-            that places itself with the grace of honey, eliminating the violent
-            vibration that once marked concrete construction. These innovations
-            reveal a material growing more sophisticated, more humane.
+        {#if section.subheading}
+          <p class="drop">
+            <strong>{section.subheading}</strong>
           </p>
-        </div>
-      </div>
+        {/if}
 
-      <h2>Steel: The Tensile Dreams of Modernity</h2>
-      <p>
-        <strong>The Structural Poetry of Progress</strong>
-      </p>
-      <p>
-        Steel construction enabled architecture’s great liberation from the
-        tyranny of the wall. No longer did load-bearing masonry dictate the
-        rhythm of openings—steel’s extraordinary strength-to-weight ratio freed
-        façades to become pure expression.
-        <br /> <br />
+        {#each section.content as paragraph}
+          <p>
+            {paragraph}
+          </p>
+        {/each}
 
-        In India's high-rise buildings, steel performs its greatest magic: it
-        allows us to build vertically without losing our connection to the
-        horizontal. The steel frame construction of Mumbai's towers maintains
-        the architectural rhythm of our traditional courtyard houses—just
-        stacked into the sky. Each floor becomes a horizontal village, connected
-        by vertical streets of circulation. TMT steel bars represent evolution
-        in action—the hard skin protecting a ductile core, much like bamboo's
-        response to wind. This seismic design wisdom emerges from our own
-        geological reality: in earthquake zones, buildings must bend, not break.
-        Steel teaches concrete this dance of flexibility.
-        <br /> <br />
+        {#if section.subsection}
+          <div class="two-col">
+            <div>
+              <h3>{section.subsection.heading}</h3>
+              {#each section.subsection.content as paragraph}
+                <p>
+                  {paragraph}
+                  {#if paragraph !== section.subsection.content[section.subsection.content.length - 1]}
+                    <br /> <br />
+                  {/if}
+                </p>
+              {/each}
+            </div>
+          </div>
+        {/if}
 
-        Prefabricated steel structures speak to our contemporary condition of
-        rapid change. Like the traveling carpenters who once moved across the
-        subcontinent building temples and palaces, steel components can be
-        fabricated in one place and assembled anywhere. This modular
-        construction approach democratizes quality—the precision of factory
-        manufacturing serving the urgency of field construction.
-      </p>
+        {#if section.image}
+          <figure
+            class={section.image.caption ? "materials-grid" : "lead-figure"}
+            aria-hidden="true"
+          >
+            <img src={section.image.src} alt={section.image.alt} />
+            {#if section.image.caption}
+              <figcaption>{section.image.caption}</figcaption>
+            {/if}
+          </figure>
+        {/if}
 
-      <figure class="lead-figure" aria-hidden="true">
-        <img
-          src="/image 84.png"
-          alt="Grid of material samples: concrete, wood, steel, brick"
-        />
-      </figure>
-
-      <p>
-        The Lightness of Being <br />
-
-        Structural steel enables architecture to touch the earth gently. While
-        concrete foundations anchor us to the geological present, steel
-        superstructures float above, creating large-span buildings that seem to
-        defy gravity. The great industrial buildings of our manufacturing
-        corridors demonstrate this poetry of lightness—vast spaces uninterrupted
-        by columns, where human activity flows like wind across the plains.
-        Steel building construction has learned to collaborate with India's
-        tropical sun. Cold-formed steel systems create ventilated cavities that
-        promote air movement, while lightweight steel framing reduces the
-        thermal mass that would otherwise store unwanted heat. This is
-        climate-responsive construction technology at its most intelligent. The
-        steel recycling narrative speaks to architecture's responsibility to
-        future generations. Unlike concrete, which returns to aggregate, steel
-        maintains its molecular integrity through infinite cycles of reuse. Each
-        demolished structure becomes the raw material for tomorrow's
-        dreams—truly sustainable construction in its most literal sense.
-      </p>
-
-      <h2>Wood: The Living Memory of Architecture</h2>
-      <p>
-        <strong>The Cellular Wisdom of Growth</strong>
-      </p>
-      <p>
-        Wood construction connects us to architecture's deepest roots. Unlike
-        the manufactured uniformity of concrete and steel, timber construction
-        carries the memory of seasons, the record of rainfall, the signature of
-        soil and sunlight. Each grain line tells the story of a year's
-        growth—architecture that literally embodies time. <br />
-        Cross-laminated timber (CLT) represents wood's conversation with contemporary
-        engineering. By laminating timber layers perpendicular to each other, we
-        recreate at the human scale what nature accomplishes at the cellular level—the
-        orthogonal strength that allows trees to sway without snapping. Mass timber
-        construction thus becomes biomimicry of the highest order. <br />
-        In India's sustainable construction movement, wood offers something concrete
-        and steel cannot: the ability to store carbon rather than emit it. Timber
-        buildings become carbon banks, locking atmospheric CO2 into cellulose vaults.
-        This is architecture as environmental healing—buildings that give back more
-        than they take. <br />
-        Engineered wood products extend timber's possibilities while honoring its
-        essential nature. Glue-laminated timber creates structural members that span
-        like steel while breathing like wood. Bamboo construction using engineered
-        bamboo products brings this ancient grass into the realm of modern building
-        design—fast-growing, strong, and perfectly adapted to monsoon conditions.
-
-        <br /> <br />
-
-        The Sensory Architecture of Wood <br /> <br />
-
-        Wood's thermal properties create microclimates of comfort. Unlike the
-        thermal shock of touching concrete or steel on a hot day, wood remains
-        at human temperature—a material that welcomes contact. In residential
-        construction, this tactile quality transforms houses into homes, spaces
-        into places. The acoustic properties of wood create architecture that
-        sounds as good as it looks. Concert halls choose wood not for fashion
-        but for physics—timber's cellular structure absorbs harsh frequencies
-        while reflecting musical ones. Wooden flooring in our homes performs
-        similar magic, softening the sharp sounds of daily life. FSC-certified
-        wood connects contemporary construction to responsible forest
-        stewardship. This certification ensures our construction timber comes
-        from forests managed for perpetuity rather than
-        exploitation—architecture that takes only what can be renewed.
-      </p>
-
-      <figure class="materials-grid" aria-hidden="true">
-        <img
-          src="/image 85.png"
-          alt="planks of finished wood showing grain and finish"
-        />
-        <figcaption>Timber samples — tactile, warm, and resonant</figcaption>
-      </figure>
-
-      <h2>The Triangular Dance: Integration as Wisdom</h2>
-
-      <p>
-        The Composite Philosophy The greatest modern architecture emerges not
-        from the dominance of any single material, but from their intelligent
-        collaboration. Hybrid construction systems demonstrate this synthesis:
-        concrete foundations that anchor structures to the earth, steel frames
-        that enable spatial freedom, and wood components that humanize the
-        experience. <br />
-        Building information modeling (BIM) now enables architects to choreograph
-        this material dance with unprecedented precision. We can optimize the performance
-        of each material within the larger structural symphony, creating energy-efficient
-        buildings that perform better than the sum of their parts. <br />
-        Construction quality control becomes the conductor's baton in this orchestration.
-        Each material must be deployed at the right moment, in the right proportion,
-        for the right purpose. The building codes that govern our practice recognize
-        this complexity, establishing the rules within which material creativity
-        can flourish. <br />
-        The Cultural Substrate <br />
-        In India's construction industry, these three materials have become part
-        of our cultural DNA. The skilled workforce that shapes our built environment
-        carries generations of knowledge about concrete mixing, steel welding, and
-        wood joining. This is not mere technical expertise, but cultural continuity—the
-        hands that build our future connected to the wisdom that built our past.
-        <br />
-        Construction costs reflect not just material prices, but the efficiency that
-        comes from deep familiarity. Ready-mix concrete trucks navigate our narrow
-        streets with practiced ease. Steel fabrication shops dot our industrial landscapes,
-        each a repository of metalworking knowledge. Timber merchants understand
-        the seasonal rhythms of wood supply, connecting forest cycles to construction
-        schedules.
-        <br />
-        The material supply chains that serve our construction projects create economic
-        ecosystems spanning from quarry to construction site, from steel mill to
-        fabrication shop, from forest to sawmill. These networks represent social
-        infrastructure as important as the physical infrastructure they help create.
-        <br />
-        The Environmental Imperative <br />
-        Sustainable building materials evolution pushes all three materials toward
-        greater environmental sensitivity. Carbon-neutral concrete using alternative
-        cementitious materials. Green steel production powered by renewable energy.
-        Sustainable forestry that treats forests as perpetual resources rather than
-        mining sites. <br />
-        Net-zero construction becomes achievable when these materials collaborate
-        intelligently. Concrete thermal mass storing solar heat for night-time release.
-        Steel structures enabling natural ventilation systems. Wood components providing
-        insulation and carbon storage. The green building certification systems that
-        evaluate our work recognize this integrated approach to environmental performance.
-        <br />
-        Construction waste management closes the loop, ensuring that today's buildings
-        become tomorrow's raw materials. Deconstruction rather than demolition preserves
-        material value, while recycled concrete aggregate and reclaimed timber bring
-        the patina of time into new constructions. <br />
-      </p>
-
-      <h2 class="nsjkds">The Continuing Story</h2>
-
-      <p>
-        The science of building materials reveals why concrete, steel, and wood
-        remain central to our architectural practice. They succeed because they
-        address the fundamental human needs that architecture must serve:
-        shelter from the elements, space for activity, beauty for the soul. <br
-        />
-        Their persistence through waves of innovation demonstrates something profound
-        about the relationship between material properties and human habitation.
-        These are not merely construction materials, but the physical vocabulary
-        through which we express our deepest aspirations for dwelling on this earth.
-        <br />
-        As India continues its great urban transformation, these materials will continue
-        to evolve, to learn, to adapt. They will remain the constants in our architectural
-        equation—the reliable partners in our ongoing dialogue between human need
-        and environmental possibility. <br />
-        Future architecture will speak this same language, enriched by new understanding
-        but rooted in timeless wisdom. In the end, we build not with materials alone,
-        but with the accumulated knowledge of how materials can serve life. This
-        is the true science behind timeless materials: their capacity to remain forever
-        young in service of human flourishing. <br />
-      </p>
+        {#if section.additionalContent}
+          {#each section.additionalContent as content}
+            <p>
+              {content}
+            </p>
+          {/each}
+        {/if}
+      {/each}
     </article>
   </main>
 
   <div class="footer-content">
     <div class="content-2">
-      <h3>The Archideus Journal</h3>
+      <h3>The In - Between</h3>
       <div class="content-2-description">
         <p>
           Dive into our thoughts, process, and inspirations. From design
@@ -327,75 +202,69 @@ Usage:
         <button> Read Our stories </button>
       </div>
     </div>
-
-    <div class="content-3">
+    <div class=" content-3">
       <div class="content-3-tab">
-        <a href="/blog" class="hoverme">
-          <div class="content-3-card">
-            <div class="content-3-card-image">
-              <img src="/arrow.png" alt="Arrow" class="content-3-image2" />
-              <img src="/card1.png" alt="Card 1" class="content-3-image1" />
+        <a href="/blog">
+          <div class=" content-3-card">
+            <div class=" content-3-card-image">
+              <img src="arrow.png" alt="Image 3" class="content-3-image2" />
+              <img src="card1.png" alt="Image 3" class="content-3-image1" />
             </div>
-            <div class="content-3-card-header">
-              <h4>Designing with Purpose</h4>
-              <span>12min</span>
-            </div>
-            <div class="content-3-card-description">
-              <p>
-                We believe great design starts with intention. Here's how
-                purpose guides every decision we make
-              </p>
+            <div class=" content-3-card-header">
+              <div class=" content-3-card-description">
+                <p>
+                  The Science Behind Timeless Materials: Why Concrete, Steel,
+                  and Wood Still Reign in Modern Architecture
+                </p>
+              </div>
+              <!-- <h4>
+                            The Science Behind Timeless Materials: Why Concrete,
+                            Steel, and Wood Still Reign in Modern Architecture
+                        </h4> -->
+              <span> 12min </span>
             </div>
           </div>
         </a>
-
-        <div class="content-3-card">
-          <div class="content-3-card-image">
-            <img src="/arrow.png" alt="Arrow" class="content-3-image2" />
-            <img src="/card2.png" alt="Card 2" class="content-3-image1" />
+        <a href="/blog/2">
+          <div class=" content-3-card">
+            <div class=" content-3-card-image">
+              <img src="arrow.png" alt="Image 3" class="content-3-image2" />
+              <img src="card2.png" alt="Image 3" class="content-3-image1" />
+            </div>
+            <div class=" content-3-card-header">
+              <div class=" content-3-card-description">
+                <p>
+                  Explore how putting users at the heart of the design process
+                  fosters creativity and drives impactful solutions.
+                </p>
+              </div>
+              <span> 15min </span>
+            </div>
           </div>
-          <div class="content-3-card-header">
-            <h4>User - Centered Innovation</h4>
-            <span>15min</span>
-          </div>
-          <div class="content-3-card-description">
-            <p>
-              Explore how putting users at the heart of the design process
-              fosters creativity and drives impactful solutions.
-            </p>
-          </div>
-        </div>
+        </a>
       </div>
-
-      <div class="content-3-card">
-        <div class="content-3-card-image">
-          <img src="/arrow.png" alt="Arrow" class="content-3-image2" />
-          <img src="/card3.jpg" alt="Card 3" class="content-3-image1" />
+      <a href="/blog/1">
+        <div class=" content-3-card">
+          <div class=" content-3-card-image">
+            <img src="arrow.png" alt="Image 3" class="content-3-image2" />
+            <img src="card3.jpg" alt="Image 3" class="content-3-image1" />
+          </div>
+          <div class=" content-3-card-header">
+            <div class=" content-3-card-description">
+              <p>Biophilic Design: Where Neuroscience Meets Architecture</p>
+            </div>
+            <span> 10min </span>
+          </div>
         </div>
-        <div class="content-3-card-header">
-          <h4>
-            Sustainable
-            <br />
-            Practices in Design
-          </h4>
-          <span>10min</span>
-        </div>
-        <div class="content-3-card-description">
-          <p>
-            Discover the importance of sustainability in design and how it
-            influences our approach to creating lasting products.
-          </p>
-        </div>
-      </div>
+      </a>
     </div>
-
     <div class="content-4">
       <h3>
-        <span>If you've come this far,</span>
-        <span>Then you're already imagining it.</span>
-        <span class="itallic">Lets bring it to life.</span>
+        <span>If you’ve come this far,</span>
+        <span>Then you’re already imagining it.</span>
+        <span></span>Lets bring it to life.
       </h3>
-      <button>Just Say Hello</button>
+      <button> Just Say Hello </button>
     </div>
   </div>
 </div>

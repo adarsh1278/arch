@@ -61,8 +61,8 @@
             </div>
         </div>
 
-        <a href="#" class="nav-link">In-between</a>
-        <a href="/blog" class="nav-link">Blogs</a>
+        <a href="/in-between" class="nav-link">In-between</a>
+        <!-- <a href="/blog" class="nav-link">Blogs</a> -->
         <a href="/contact" class="nav-link">Contact us</a>
     </div>
     <!-- Right Empty (Desktop) -->
