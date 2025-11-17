@@ -62,14 +62,24 @@
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <h2>Roop nagar villa</h2>
-                    <span>Residential | Noida, Uttar Pradesh</span>
-                    <img src="p1.png" width="100%" />
+                    <a href="/casestudies/roopnagar">
+                        <h2>Roop nagar villa</h2>
+                        <span>Residential | Noida, Uttar Pradesh</span>
+                        <img src="/FINAL 1.png" width="100%" />
+                    </a>
                 </div>
 
                 <div class="swiper-slide">
                     <a href="/casestudies/mouseAndcheese">
                         <h2 id="nmsmjk">Mouse and cheese design studio</h2>
+                        <span>Commercial | Noida, Uttar Pradesh</span>
+
+                        <img src="2.png" width="100%" />
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="/casestudies/DIRECTOR CABIN LOUNGE  1.png">
+                        <h2 id="nmsmjk">office-Space</h2>
                         <span>Commercial | Noida, Uttar Pradesh</span>
 
                         <img src="2.png" width="100%" />

@@ -62,8 +62,12 @@
                         <a href="/casestudies/Lawrence" class="sub-link"
                             >Lawrence Villa</a
                         >
-                        <a href="#" class="sub-link">Roop Nagar Villa</a>
-                        <a href="#" class="sub-link">Indrapuram</a>
+                        <a href="/casestudies/roopnagar" class="sub-link"
+                            >Roop Nagar Villa</a
+                        >
+                        <a href="/casestudies/indrapuram" class="sub-link"
+                            >Indrapuram</a
+                        >
                     </div>
                 </div>
                 <div class="dropdown-item">
@@ -72,7 +76,9 @@
                         <a href="/casestudies/mouseAndcheese" class="sub-link"
                             >Mouse & Cheese Design Studio</a
                         >
-                        <a href="#" class="sub-link">SixD</a>
+                        <a href="/casestudies/office-Space" class="sub-link"
+                            >SixD</a
+                        >
                         <a href="#" class="sub-link">A-82 First Floor</a>
                     </div>
                 </div>
